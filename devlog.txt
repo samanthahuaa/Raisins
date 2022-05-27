@@ -45,11 +45,11 @@ tales of wisdom gained...
 ==============================================================
 
 
-yyyy-mm-dd
+2022-05-26
 --------------------------------------------------------------
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Ruby :: Created the propro document, completed the showcase section
+Nada :: Worked on propro document, completed the extends section
+Samantha :: Created the team flag, completed the Solidify section of the propro
 ==============================================================
 
 
