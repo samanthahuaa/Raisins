@@ -3,7 +3,7 @@ class Pokemon {
   String name;
   int health;
   int rarity;
-  // int catchPercentage;
+  // double catchPercentage;
 
   // default constructor
   Pokemon() {
@@ -20,7 +20,7 @@ class Pokemon {
   }
 
   void evolve() {
-    
+
   }
 
   // accessor methods

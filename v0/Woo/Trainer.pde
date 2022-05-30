@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 class Trainer{
   //inst vars
   ArrayList<Items> backpack;
-  final ArrayList<Pokemon> pokedex;
+  final ArrayList<TreeNode> pokedex;
   ArrayList<Pokemon> storage;
   int wallet;
 
@@ -12,6 +14,19 @@ class Trainer{
     backpack = new ArrayList<Items>();
     // give the user a starting pokemon
     storage.add(pokedex[random(pokedex.length)]);
+
+    try {
+      Scanner input = new Scanner(new File("cleanSentiment.csv"));
+      while(input.hasNextLine()){
+        String[] temp = input.nextLine().split(",");
+        sentiment.put(temp[0],Double.parseDouble(temp[1]));
+        //System.out.println("added "+ temp[0]+", "+temp[1]);
+      }
+      input.close();
+    }
+    catch(Exception e){
+      System.out.println("Error reading or parsing cleanSentiment.csv");
+    }
   }
 
   //methods
@@ -20,7 +35,7 @@ class Trainer{
     wallet++;
 
     // the player figure is actually moving
-    
+
 
     float tmp = random(1);
     if (tmp < 0.3) {
