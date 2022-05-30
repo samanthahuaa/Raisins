@@ -52,4 +52,8 @@ Nada :: Worked on propro document, completed the extends section
 Samantha :: Created the team flag, completed the Solidify section of the propro
 ==============================================================
 
-
+2022-05-30
+--------------------------------------------------------------
+Ruby :: Solidified catch rate/rarity, values for csv file, worked on TreeNode.pde
+Nada :: Completed uml, worked on TreeNode.pde
+Samantha :: Created csv file for pokedex, completed uml, worked on TreeNode.pde
