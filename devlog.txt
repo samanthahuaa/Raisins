@@ -69,13 +69,6 @@ variety in the rarity and would be more scalable. Fleshed out the PriorityQueue 
 and discussed how it would it would only be similar to the PriorityQueue in its
 separation between the group of data. In the execution of our pokedex, we would simply
 have a random double to determine which group we would pick a Pokemon from (easy, med, rare)
-and another random double to determine which random Pokemon would be selected.
-==============================================================
-
-TEMPLATE:
-2022-06-
---------------------------------------------------------------
-Ruby ::
-Nada ::
-Samantha ::
+and another random double to determine which random Pokemon would be selected. Completed
+UML diagrams.
 ==============================================================
