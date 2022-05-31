@@ -8,7 +8,7 @@ class Trainer{
   int wallet;
 
   //constructor
-  Trainer {
+  Trainer (){
     wallet = 10;
     storage = new ArrayList<Pokemon>();
     backpack = new ArrayList<Items>();

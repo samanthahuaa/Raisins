@@ -92,6 +92,22 @@ All :: Selected the trainer sprite we wanted to use. Picked the background image
 we wanted to use. Coded the sprite's movement and worked on the boundaries.
 ==============================================================
 
+2022-05-31 (CSDojo)
+--------------------------------------------------------------
+Ruby :: added a few urls to pokedex.csv, worked on further incorporating images in the code.
+Nada :: came up with the idea of creating a separate object for the user that's
+a trainer, without association with the image; saved us from the crisis of using our images.
+Samantha :: Reminded the group that the image for the sprite should be saved within
+the repo to be referenced in the driver file.
+
+All: Had a mini crisis because all of our files almost vroom vroomed away. We were
+able to resolve all issues. We asked our great Dojo Sensei TRT how we could connect
+our visuals to our backend code. She very nicely explained to us and helped us develop the idea
+that we should have an object of the type we want and separate it from the visuals. This would
+allow us to have a sprite moving on screen and a working Trainer object. The
+various Trainer methods would be called when the sprite fills certain requirements.
+==============================================================
+
 TEMPLATE:
 2022-06-
 --------------------------------------------------------------
