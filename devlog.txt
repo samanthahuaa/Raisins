@@ -58,11 +58,12 @@ Ruby :: Explained how TreeNode should have type Pokemon in the cargo. Proposed t
 pokedex should just be a csv file that our program would read.
 Nada :: Finished the TreeNode.pde file by referencing the TreeNode.java file we had
 previously completed in Homeworks 95-97. Explained how a PriorityQueue could be used
-in the pokedex so that the easier to catch pokemon are in the front of the queue and
+in the pokedex so that the easier to catch Pokemon are in the front of the queue and
 have "priority."
 Samantha :: Brought up how TreeNode's left and right pointers should be of type
 TreeNode instead of type Pokemon. Remembered that we had previously read and processed
 csv files and pulled up that code as reference.
+
 All :: Discussed, debated and decided that the rarity should be on a 1,2,3 scale
 with 3 being the most rare. The alternative was a 0 to 1 scale which allowed for more
 variety in the rarity and would be more scalable. Fleshed out the PriorityQueue option
@@ -71,4 +72,30 @@ separation between the group of data. In the execution of our pokedex, we would 
 have a random double to determine which group we would pick a Pokemon from (easy, med, rare)
 and another random double to determine which random Pokemon would be selected. Completed
 UML diagrams.
+==============================================================
+
+2022-05-31 (in class)
+--------------------------------------------------------------
+Ruby :: Proposed that we should begin creating a visual tutorial instead of focusing
+on the functionality of the program. Suggested the sprite should move like PacMan
+where once the sprite goes beyond the boundary of the screen, it should reappear
+on the other side.
+Nada :: Referenced the processing nuggets created by our classmates and learned how
+to load an image. Brought up the processing library to see how to resize the image.
+Created the v1 (separate from v1 in the visuals and UI)
+Samantha :: Noticed the size of the screen was the wrong proportions for the
+background image. Found how to find the dimensions of the background image to set
+the screen the right size. Showed the group the remove.bg website which can be
+used to remove a background of an image.
+
+All :: Selected the trainer sprite we wanted to use. Picked the background image
+we wanted to use. Coded the sprite's movement and worked on the boundaries.
+==============================================================
+
+TEMPLATE:
+2022-06-
+--------------------------------------------------------------
+Ruby ::
+Nada ::
+Samantha ::
 ==============================================================
