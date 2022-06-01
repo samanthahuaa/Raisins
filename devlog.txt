@@ -121,6 +121,19 @@ as a group
 All :: Worked on flowchart and talked about user experience in the game.
 ==============================================================
 
+2022-06-1 (In class)
+--------------------------------------------------------------
+Ruby :: Worked on the tutorial + visuals. 
+Nada :: Referenced the processing library to create a visual illusion of text 
+disappearing on the screen. Refined Trainer.pde to make sure it has all of the
+functionality that will be used later on. Completed move() method and started
+fight() method.
+Samantha :: Went to piazza to check what nuggs have been shared with the class. 
+Found a great post by TAP about buttons in processing and used that code to guide 
+our development of the tutorial. Added comments to the code to explain what each 
+component does.
+==============================================================
+
 TEMPLATE:
 2022-06-
 --------------------------------------------------------------
