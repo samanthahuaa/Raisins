@@ -2,6 +2,7 @@ class Items{
   // inst vars
   int drarity;
   int dhealth;
+  // to determine which items are used for catching Pokemon (ex: Pokeballs)
   boolean catching;
   String name;
 

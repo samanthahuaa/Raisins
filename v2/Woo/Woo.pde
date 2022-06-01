@@ -6,6 +6,7 @@ PImage user;
 float playerX = 300;
 float playerY = 418;
 
+boolean showTutorial = true;
 
 void setup(){
   size(772,836);
@@ -16,23 +17,26 @@ void setup(){
   user = loadImage(urlP, "png");
   user.resize(130,78);
   image(Img, 0, 0);
-  image(user, playerX, playerY);
-  tutorial();
 }
 
 void draw(){
-
-
+  image(Img, 0, 0);
+  image(user, playerX, playerY);
+  
+  if (showTutorial) {
+    tutorial();
+  }
+  
   if(playerX < -65){
     playerX = 725;
   }
-  if(playerX > 725){
+  else if(playerX > 725){
     playerX = -65;
   }
-  if(playerY < -65){
+  else if(playerY < -65){
     playerY = 811;
   }
-  if(playerY > 811){
+  else if(playerY > 811){
     playerY = -65;
   }
 }
@@ -41,21 +45,25 @@ void keyPressed(){
   if(key == 'w' || keyCode == UP){
     playerY-=40;
   }
-  if(key == 's'|| keyCode == DOWN){
+  else if(key == 's'|| keyCode == DOWN){
     playerY+=40;
   }
-  if(key == 'a'|| keyCode == LEFT){
+  else if(key == 'a'|| keyCode == LEFT){
     playerX-=40;
   }
-  if(key == 'd'|| keyCode == RIGHT){
+  else if(key == 'd'|| keyCode == RIGHT){
     playerX+=40;
   }
-  if(key == 't') {
-    tutorial();
+  else if(key == 't') {
+    showTutorial = true;
+  }
+  else if (key == 'x') {
+    showTutorial = false;
   }
 }
 
 void tutorial(){
+   fill(250);
    rect(120,300,500,300,100);
    fill(0);
    textSize(24);

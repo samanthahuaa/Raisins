@@ -4,14 +4,16 @@ PImage user;
 
 Trainer player;
 
+
 //coordinates of user
 float playerX = 300;
 float playerY = 418;
 
+boolean showTutorial = true;
 
 void setup(){
   // create a new instance of Trainer to represent the player
-  player =  = new Trainer();
+  player = new Trainer();
 
   // create the screen
   size(772,836);
@@ -22,27 +24,30 @@ void setup(){
   Img.resize(772,836);
 
   // create the user sprite
-  String urlP = "yee-removebg-preview.png";
+  String urlP = "user-sprite-1.png";
   user = loadImage(urlP, "png");
   user.resize(130,78);
   image(Img, 0, 0);
-  image(user, playerX, playerY);
-
-  // begins the tutorial
-  tutorial();
 }
 
 void draw(){
+  image(Img, 0, 0);
+  image(user, playerX, playerY);
+  
+  if (showTutorial) {
+    tutorial();
+  }
+  
   if(playerX < -65){
     playerX = 725;
   }
-  if(playerX > 725){
+  else if(playerX > 725){
     playerX = -65;
   }
-  if(playerY < -65){
+  else if(playerY < -65){
     playerY = 811;
   }
-  if(playerY > 811){
+  else if(playerY > 811){
     playerY = -65;
   }
 }
@@ -66,10 +71,15 @@ void keyPressed(){
   else if(key == 'd'|| keyCode == RIGHT){
     playerX+=40;
   }
-
+  else if(key == 'b' || key == 'B'){
+    player.printBackpack();
+  }
   // if t is pressed, open up the tutorial again
-  if(key == 't') {
-    tutorial();
+  else if(key == 't') {
+    showTutorial = true;
+  }
+  else if (key == 'x') {
+    showTutorial = false;
   }
 }
 
@@ -83,6 +93,6 @@ void tutorial(){
    text("To move, use the WASD or arrow keys", 170, 400);
    text("to re-open the tutorial press the t key", 170, 430);
    text("to close this tutorial press x", 170,460);
- 
+
 
 }

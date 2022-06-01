@@ -3,6 +3,7 @@ class Pokemon {
   String name;
   int health;
   int rarity;
+  String urlImg;
   // double catchPercentage;
 
   // default constructor
@@ -13,10 +14,11 @@ class Pokemon {
   }
 
   // overloaded constructor
-  Pokemon(String n, int h, int r ) {
+  Pokemon(String n, int h, int r, String urlInput ) {
     name = n;
     health = h;
     rarity = r;
+    urlImg = urlInput;
   }
 
   void evolve() {
