@@ -123,15 +123,33 @@ All :: Worked on flowchart and talked about user experience in the game.
 
 2022-06-1 (In class)
 --------------------------------------------------------------
-Ruby :: Worked on the tutorial + visuals. 
-Nada :: Referenced the processing library to create a visual illusion of text 
+Ruby :: Worked on the tutorial + visuals.
+Nada :: Referenced the processing library to create a visual illusion of text
 disappearing on the screen. Refined Trainer.pde to make sure it has all of the
 functionality that will be used later on. Completed move() method and started
 fight() method.
-Samantha :: Went to piazza to check what nuggs have been shared with the class. 
-Found a great post by TAP about buttons in processing and used that code to guide 
-our development of the tutorial. Added comments to the code to explain what each 
+Samantha :: Went to piazza to check what nuggs have been shared with the class.
+Found a great post by TAP about buttons in processing and used that code to guide
+our development of the tutorial. Added comments to the code to explain what each
 component does.
+==============================================================
+
+2022-06-01 (CS Dojo)
+--------------------------------------------------------------
+Ruby :: was unavailable
+Nada :: proposed the idea of using a tutorial boolean to determine when that
+screen would pop up; found some code for parsing a csv file
+Samantha :: went back to v1 to fix player movement error, referenced rumpus
+room nuggets; worked on v2 in order to get the tutorial screen to pop up; updated
+README.md; added TreeNode class to v3, worked on parsing csv file based on previous
+lab/hws; diagrammed and coded parsing of csv file
+
+All: Good senpai TFH at the Dojo helped us fix player movement; closed v1, and
+v2 functionality (aside from visual aspects); updated v3 so that it compiles and runs.
+Sensei YL provided sage advice regarding certain methods and their return statements. We
+believe that we are able to properly parse the csv file and create corresponding Pokemon.
+There are still edits to be made, especially when we consider the implementation of trees/
+evolution.
 ==============================================================
 
 TEMPLATE:
