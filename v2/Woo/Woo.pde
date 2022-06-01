@@ -15,11 +15,13 @@ void setup(){
   String urlP = "yee-removebg-preview.png";
   user = loadImage(urlP, "png");
   user.resize(130,78);
+  image(Img, 0, 0);
+  image(user, playerX, playerY);
+  tutorial();
 }
 
 void draw(){
-  image(Img, 0, 0);
-  image(user, playerX, playerY);
+
 
   if(playerX < -65){
     playerX = 725;
@@ -36,16 +38,28 @@ void draw(){
 }
 
 void keyPressed(){
-  if(key == 'w'){
+  if(key == 'w' || keyCode == UP){
     playerY-=40;
   }
-  if(key == 's'){
+  if(key == 's'|| keyCode == DOWN){
     playerY+=40;
   }
-  if(key == 'a'){
+  if(key == 'a'|| keyCode == LEFT){
     playerX-=40;
   }
-  if(key == 'd'){
+  if(key == 'd'|| keyCode == RIGHT){
     playerX+=40;
   }
+  if(key == 't') {
+    tutorial();
+  }
+}
+
+void tutorial(){
+   rect(120,300,500,300,100);
+   fill(0);
+   textSize(24);
+   text("Welcome to the Raisin Pokemon game!",170,370);
+   textSize(16);
+
 }

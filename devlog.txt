@@ -108,6 +108,19 @@ allow us to have a sprite moving on screen and a working Trainer object. The
 various Trainer methods would be called when the sprite fills certain requirements.
 ==============================================================
 
+2022-05-31 (At home)
+--------------------------------------------------------------
+Ruby :: Added functionality so that the up/down/left/right arrow keys also move
+the sprite. Used the processing library to find how to connect the program to the
+arrow keys. Started experimenting with a tutorial.
+Nada :: Started the flowchart in google docs, discussed ease of user experience
+and encouraged the group to simplify the flow.
+Samantha :: Consulted piazza for new flowchart software and ended up using draw.io
+as a group
+
+All :: Worked on flowchart and talked about user experience in the game.
+==============================================================
+
 TEMPLATE:
 2022-06-
 --------------------------------------------------------------
