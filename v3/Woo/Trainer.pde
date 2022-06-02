@@ -86,11 +86,16 @@ class Trainer{
   ArrayList<TreeNode> pokedex() {
     ArrayList<TreeNode> temp = new ArrayList<TreeNode>();
     String[] lines = loadStrings("pokedex.csv");
-    for (int i=0; i < lines.length; i++) {
+    for (int i=1; i < lines.length; i++) {
       String[] tokens = splitTokens(lines[i], ",");
+
       Pokemon tempyy = new Pokemon(tokens[0], int(tokens[1]), int(tokens[2]), tokens[4]);
       if (int(tokens[3]) == 1) {
-        TreeNode tempyyy = new TreeNode(tempyy, )
+        String[] ptokens = splitTokens(lines[i+1], ",");
+        Pokemon tumpy = new Pokemon(ptokens[0], int(ptokens[1]), int(ptokens[2]), ptokens[4]);
+        TreeNode tumpee = new TreeNode(tumpy);
+        TreeNode tempyyy = new TreeNode(tempyy, tumpee, null);
+        temp.add(tempyyy);
       }
       temp.add(tempyy);
   }
