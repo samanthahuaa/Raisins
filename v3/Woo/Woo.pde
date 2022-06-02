@@ -24,7 +24,7 @@ void setup(){
   Img.resize(772,836);
 
   // create the user sprite
-  String urlP = "user-sprite-1.png";
+  String urlP = "assets/user-sprite-1.png";
   user = loadImage(urlP, "png");
   user.resize(130,78);
   image(Img, 0, 0);
@@ -33,11 +33,11 @@ void setup(){
 void draw(){
   image(Img, 0, 0);
   image(user, playerX, playerY);
-  
+
   if (showTutorial) {
     tutorial();
   }
-  
+
   if(playerX < -65){
     playerX = 725;
   }

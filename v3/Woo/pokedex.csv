@@ -1,13 +1,13 @@
-Name,Health,Rarity,Evolution
-Bulbasaur,7,1,1
-Ivysaur,12,2,1
-Venusaur,20,3,0
-Charmander,7,1,1
-Charmeleon,12,2,1
-Charizard,20,3,0
-Squirtle,7,1,1
-Wartortle,12,2,1
-Blastoise,20,3,0
-Caterpie,5,1,1
-Metapod,10,2,1
-Butterfree,15,3,0
+Name,Health,Rarity,Evolution,Image
+Bulbasaur,7,1,1, assets/
+Ivysaur,12,2,1, assets/
+Venusaur,20,3,0, assets/
+Charmander,7,1,1, assets/
+Charmeleon,12,2,1, assets/
+Charizard,20,3,0, assets/
+Squirtle,7,1,1, assets/
+Wartortle,12,2,1, assets/
+Blastoise,20,3,0, assets/
+Caterpie,5,1,1, assets/
+Metapod,10,2,1, assets/
+Butterfree,15,3,0, assets/
