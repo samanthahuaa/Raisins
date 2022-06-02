@@ -155,12 +155,16 @@ evolution.
 
 2022-06-01 (At home)
 --------------------------------------------------------------
-Ruby ::
-Nada :: Created the assets folder in v3
-Samantha ::
+Ruby :: Added all of the png files of our Pokemon sprite images into
+the csv file and assets folder
+Nada :: Created the assets folder in v3. Created test cases for our evolution
+tree algo.
+Samantha :: Proposed the idea that while reading and parsing through the csv file,
+the program should create Pokemon objects to be passed into a TreeNode constructor
+so that the TreeNodes will eventually contain Pokemon cargo.
 
 All :: Closed out v2 because we decided the tutorial was finished for now. We will
-most likely revisit it later.
+most likely revisit it later. Planned out how to implement evolutions in our pokedex.
 ==============================================================
 
 TEMPLATE:

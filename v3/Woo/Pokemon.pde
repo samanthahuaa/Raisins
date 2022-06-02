@@ -4,6 +4,7 @@ class Pokemon {
   int health;
   int rarity;
   String urlImg;
+  int children;
   // double catchPercentage;
 
   // default constructor
@@ -11,13 +12,16 @@ class Pokemon {
     name = "";
     health = 0;
     rarity = 0;
+    children = 0;
+    urlImg = "";
   }
 
   // overloaded constructor
-  Pokemon(String n, int h, int r, String urlInput ) {
+  Pokemon(String n, int h, int r, int child, String urlInput) {
     name = n;
     health = h;
     rarity = r;
+    children = child;
     urlImg = urlInput;
   }
 

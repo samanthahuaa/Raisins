@@ -7,7 +7,7 @@ class Trainer{
   //inst vars
   ArrayList<Items> backpack;
   // supposed to be TreeNode
-  final ArrayList<Pokemon> pokedex;
+  final ArrayList<TreeNode> pokedex;
   ArrayList<Pokemon> storage;
   int wallet;
 
@@ -21,18 +21,6 @@ class Trainer{
 
     pokedex = pokedex();
 
-    //try {
-    //  Scanner input = new Scanner(new File("pokedex.csv"));
-    //  while(input.hasNextLine()){
-    //    String[] temp = input.nextLine().split(",");
-    //    sentiment.put(temp[0],Double.parseDouble(temp[1]));
-    //    //System.out.println("added "+ temp[0]+", "+temp[1]);
-    //  }
-    //  input.close();
-    //}
-    //catch(Exception e){
-    //  System.out.println("Error reading or parsing cleanSentiment.csv");
-    //}
   }
 
   //methods
@@ -58,10 +46,10 @@ class Trainer{
     //Stack<Pokemon> fightOrder = new Stack<Pokemon>;
     //printStorage();
     //the pokemon you have are printed, and then
-    
-    
+
+
     //fighting
-    
+
   }
 /*
   catch() {
@@ -95,14 +83,15 @@ class Trainer{
 
   }
 
-  ArrayList<Pokemon> pokedex() {
-    ArrayList<Pokemon> temp = new ArrayList<Pokemon>();
+  ArrayList<TreeNode> pokedex() {
+    ArrayList<TreeNode> temp = new ArrayList<TreeNode>();
     String[] lines = loadStrings("pokedex.csv");
-    int tempy = 0;
     for (int i=0; i < lines.length; i++) {
       String[] tokens = splitTokens(lines[i], ",");
-      tempy += 1;
-      Pokemon tempyy = new Pokemon(tokens[0], int(tokens[1]), int(tokens[2]), tokens[3]);
+      Pokemon tempyy = new Pokemon(tokens[0], int(tokens[1]), int(tokens[2]), tokens[4]);
+      if (int(tokens[3]) == 1) {
+        TreeNode tempyyy = new TreeNode(tempyy, )
+      }
       temp.add(tempyy);
   }
     return temp;
