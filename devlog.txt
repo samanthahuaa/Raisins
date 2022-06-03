@@ -171,9 +171,10 @@ most likely revisit it later. Planned out how to implement evolutions in our pok
 --------------------------------------------------------------
 Ruby :: made piazza post with a helpful tidbit regarding processing that could perhaps
 save the projects and lives of other thinkeren; created String array of Parent Tokens
-Nada ::
+Nada :: brought TRF up to speed. contributed to the development of the csv reading
+and processing algo.
 Samantha :: brought TRF up to speed. diagrammed the parsing of the csv file. created
-test cases to trace the evolution tree
+test cases to trace the evolution tree from csv file data algo.
 
 All :: reviewed the code we have in place for v3 for parsing the csv file, started
 implementing evolution into pokedex; discussed modifications to csv to have variables accounting
@@ -182,9 +183,18 @@ for number of children and number of evolutions; edited parsing code
 
 2022-06-02 (at home)
 --------------------------------------------------------------
-Ruby ::
-Nada ::
-Samantha ::
+Ruby :: Proposed the idea that wallet should be an instance variable within Woo
+instead of Trainer. Created the idea that all methods involving a sort of coin
+exchange would require the passing through of the value of wallet.
+Nada :: Picked out a coin image and added it to the assets folder. Downloaded the
+new font and incorporated it into the code.
+Samantha :: Brought up scenarios where wallet being in Woo might create problems.
+Thought about new ratio for nothing/catch/fight when the player is moving. Proposed
+that the ratio should be around 6:3:1
+
+All :: Closed out v3. Picked out a font for our game (Avenir-Book). Implemented
+the font and referenced the processing library to learn about how to do so. Created
+a coin icon and a wallet tracker that updates with the user's movement.
 ==============================================================
 
 TEMPLATE:
@@ -193,4 +203,6 @@ TEMPLATE:
 Ruby ::
 Nada ::
 Samantha ::
+
+All ::
 ==============================================================
