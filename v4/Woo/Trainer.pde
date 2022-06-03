@@ -26,7 +26,7 @@ class Trainer{
   //methods
   void move(){
     // every step the user takes, they make a Pokecoins
-    wallet++;
+    //wallet++;
 
     // the player figure is actually moving => done in Woo.pde
 
@@ -34,7 +34,7 @@ class Trainer{
     if (tmp < 0.3) {
       //catch();
     }
-    else if (tmp < 0.6) {
+    else if (tmp < 0.5) {
       fight();
     }
     return;

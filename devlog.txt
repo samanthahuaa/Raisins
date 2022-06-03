@@ -172,15 +172,23 @@ most likely revisit it later. Planned out how to implement evolutions in our pok
 Ruby :: made piazza post with a helpful tidbit regarding processing that could perhaps
 save the projects and lives of other thinkeren; created String array of Parent Tokens
 Nada ::
-Samantha :: brought TRF up to speed; diagrammed the parsing of the csv file
+Samantha :: brought TRF up to speed. diagrammed the parsing of the csv file. created
+test cases to trace the evolution tree
 
 All :: reviewed the code we have in place for v3 for parsing the csv file, started
 implementing evolution into pokedex; discussed modifications to csv to have variables accounting
 for number of children and number of evolutions; edited parsing code
 ==============================================================
 
+2022-06-02 (at home)
+--------------------------------------------------------------
+Ruby ::
+Nada ::
+Samantha ::
+==============================================================
+
 TEMPLATE:
-2022-06-
+2022-06-0
 --------------------------------------------------------------
 Ruby ::
 Nada ::
