@@ -4,7 +4,9 @@
 ## Project Description
  A totally cool pokemon game in which you can catch and battle with pokemon!
 ## How-to-launch
- run the command ```Processing Woo.pde``` in your terminal
+1. open a terminal session
+2. clone this repo
+3. run the command ```Processing Woo.pde``` from the root of the cloned repo
 ## Different Versions
 v0: created all of the files and outlined what we would have in each and what it
 can do. <br>
@@ -15,6 +17,6 @@ v2: tutorial at the beginning of the program. using the t key to open up
 the tutorial and using the x key to close it. [REMEMBER TO PUT IN ALL OF THE
 OTHER FILES]<br>
 v3: utilizing move to run the Trainer function associated with moving the sprite.
-started working on reading the csv file and
+started working on reading the csv file and processing it. <br>
 v4: Implemented wallet and wallet counter
 v5:
