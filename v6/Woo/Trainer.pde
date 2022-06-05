@@ -13,6 +13,9 @@ class Trainer{
   ArrayList<Pokemon> common; 
   ArrayList<Pokemon> uncommon;
   ArrayList<Pokemon> rare;
+  boolean yas;
+  String encounter;
+  
   //constructor
   Trainer (){
     wallet = 10;
@@ -38,6 +41,7 @@ class Trainer{
 
     float tmp = random(1);
     if (tmp < 0.3) {
+      yas = true;
       Catch();
     }
     else if (tmp < 0.5) {
@@ -60,26 +64,34 @@ class Trainer{
   }
 
    void Catch(){
+     yas = true;
      float slay = random(1);
+     PImage poke;
      if (slay < 0.6) {
       //common pokemon
       int ind = (int) random(common.size());
       Pokemon enc = common.get(ind);
-      loadImage(enc.getImage(), "png");
+      encounter = enc.getImage();
+
       }
     else if (slay < 0.9) {
      //uncommon pokemon 
      int ind = (int) random(uncommon.size());
       Pokemon enc = uncommon.get(ind);
-      loadImage(enc.getImage(), "png");
+      encounter = enc.getImage();
+
     }
     else {
       //rare pokemon
      int ind = (int) random(rare.size());
       Pokemon enc = rare.get(ind);
-      loadImage(enc.getImage(), "png");
+      encounter = enc.getImage();
+
     }
     
+  }
+  String getPoke() {
+    return encounter;
   }
   void printBackpack() {
     //text(<text>, x-cor,y-cor)
@@ -110,6 +122,9 @@ class Trainer{
       }
   }
     return temp;
+  }
+  boolean isCatch() {
+    return yas;
   }
   void pokes() {
 

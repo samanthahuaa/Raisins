@@ -2,7 +2,8 @@
 PImage Img;
 PImage user;
 PImage coin;
-
+PImage ctch;
+PImage poke;
 Trainer player;
 
 //font
@@ -33,6 +34,9 @@ void setup(){
   user = loadImage(urlP, "png");
   user.resize(130,78);
   image(Img, 0, 0);
+  //catch screen
+  String urlcatch = "assets/catch.jpeg";
+  ctch = loadImage(urlcatch, "png");
   
   //create coin image
   String urlC = "assets/coin.png";
@@ -47,6 +51,13 @@ void setup(){
 }
 
 void draw(){
+  if (player.isCatch()) {
+    image(ctch, 0, 0);
+    image(user, 100, 555);
+     poke = loadImage(player.getPoke(), "png");
+     image(poke, 500, 555);
+  }
+  else {
   image(Img, 0, 0);
   image(user, playerX, playerY);
   image(coin, 10, 10);
@@ -73,6 +84,7 @@ void draw(){
   }
   else if(playerY > 811){
     playerY = -65;
+  }
   }
 }
 
