@@ -38,7 +38,7 @@ class Trainer{
 
     float tmp = random(1);
     if (tmp < 0.3) {
-      //Catch();
+      Catch();
     }
     else if (tmp < 0.5) {
       fight();
@@ -64,17 +64,20 @@ class Trainer{
      if (slay < 0.6) {
       //common pokemon
       int ind = (int) random(common.size());
-      common.get(ind);
+      Pokemon enc = common.get(ind);
+      loadImage(enc.getImage(), "png");
       }
     else if (slay < 0.9) {
      //uncommon pokemon 
      int ind = (int) random(uncommon.size());
-      uncommon.get(ind);
+      Pokemon enc = uncommon.get(ind);
+      loadImage(enc.getImage(), "png");
     }
     else {
       //rare pokemon
      int ind = (int) random(rare.size());
-      rare.get(ind);
+      Pokemon enc = rare.get(ind);
+      loadImage(enc.getImage(), "png");
     }
     
   }

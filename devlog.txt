@@ -26,7 +26,10 @@ wow! oo!...
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-we changed ___ to ___ bc...
+we changed having pokedex store rarity value of the pokemon  to having three
+separate csv files for the different levels of rarity bc it makes spawning pokemon
+of different rarities easier. (we wanted to have different rates of spawning for
+the different levels of rarity)
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -195,6 +198,34 @@ that the ratio should be around 6:3:1
 All :: Closed out v3. Picked out a font for our game (Avenir-Book). Implemented
 the font and referenced the processing library to learn about how to do so. Created
 a coin icon and a wallet tracker that updates with the user's movement.
+==============================================================
+
+2022-06-03 (in class)
+--------------------------------------------------------------
+Ruby :: proposed that there be separate csv files for the different levels of
+rarity in Pokemon. Sorted the Pokemon by rarity and created 3 new csv files with
+the respective Pokemon
+Nada :: had an exciting english guest speaker event and could not attend cs class
+womp womp
+Samantha :: finished the uml diagrams to show their relationships with one another.
+used one of the websites for flowcharts + diagrams suggested in a piazza post (ty TGT)
+and updated the instance variables + methods in the diagrams to reflect the
+changes in our code
+==============================================================
+
+2022-06-04 (at home)
+--------------------------------------------------------------
+Ruby :: started reading and processing the separate csv files in the Trainer
+method. Realized that having an extra blank line in the csv file was the reason
+the code kept breaking.
+Nada :: was not available to attend
+Samantha :: put the uml diagrams into the repo. checked that the flowchart was
+up to date (it was). Noticed that the program took a long time to load and
+advocated for a prioritization on run time efficiency. Noticed that the images for
+the Pokemon weren't loading because there was a space before the url link in the csv
+file.
+
+All :: Worked through an error in the process of reading the csv file.
 ==============================================================
 
 TEMPLATE:

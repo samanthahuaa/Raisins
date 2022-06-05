@@ -1,6 +1,5 @@
 Name,Health,Evolution,Image
-Ivysaur,12,1, assets/ivy-removebg-preview.png
-Charmeleon,12,1, assets/charm-removebg-preview.png
-Wartortle,12,1, assets/wort.png
-Metapod,10,1, assets/meta-removebg-preview.png
-
+Ivysaur,12,1,assets/ivy-removebg-preview.png
+Charmeleon,12,1,assets/charm-removebg-preview.png
+Wartortle,12,1,assets/wort.png
+Metapod,10,1,assets/meta-removebg-preview.png

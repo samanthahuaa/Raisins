@@ -1,7 +1,5 @@
-Name, Health, Evolution, Image
-Bulbasaur,7,1, assets/bulb-removebg-preview.png
-Charmander,7,1, assets/char-removebg-preview.png
-Squirtle,7,1, assets/squirtle.png
-Caterpie,5,1, assets/cat-removebg-preview.png
-
-
+Name,Health,Evolution,Image
+Bulbasaur,7,1,assets/bulb-removebg-preview.png
+Charmander,7,1,assets/char-removebg-preview.png
+Squirtle,7,1,assets/squirtle.png
+Caterpie,5,1,assets/cat-removebg-preview.png

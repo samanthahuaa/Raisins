@@ -43,7 +43,10 @@ class Pokemon {
   int getHealth() {
     return health;
   }
-  String getName(){
+  String getname(){
     return name;
+  }
+  String getImage() {
+    return urlImg;
   }
 }
