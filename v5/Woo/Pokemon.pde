@@ -24,6 +24,13 @@ class Pokemon {
     children = child;
     urlImg = urlInput;
   }
+    Pokemon(String n, int h, int child, String urlInput) {
+    name = n;
+    health = h;
+    children = child;
+    urlImg = urlInput;
+    rarity = 0;
+  }
 
   void evolve() {
 

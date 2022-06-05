@@ -10,19 +10,25 @@ class Trainer{
   final ArrayList<TreeNode> pokedex;
   ArrayList<Pokemon> storage;
   int wallet;
-
+  ArrayList<Pokemon> common; 
+  ArrayList<Pokemon> uncommon;
+  ArrayList<Pokemon> rare;
   //constructor
   Trainer (){
     wallet = 10;
     storage = new ArrayList<Pokemon>();
     backpack = new ArrayList<Items>();
+    common = new ArrayList<Pokemon>();
+    uncommon = new ArrayList<Pokemon>();
+    rare = new ArrayList<Pokemon>();
     // give the user a starting pokemon
     //storage.add(pokedex[random(pokedex.length)]);
 
     pokedex = pokedex();
-
+    pokes();
   }
 
+ 
   //methods
   void move(){
     // every step the user takes, they make a Pokecoins
@@ -32,7 +38,7 @@ class Trainer{
 
     float tmp = random(1);
     if (tmp < 0.3) {
-      //catch();
+      //Catch();
     }
     else if (tmp < 0.5) {
       fight();
@@ -40,6 +46,7 @@ class Trainer{
     return;
   }
 
+  
   void fight() {
     // trainer has to first pick their pokemon in their lineup before they start
 
@@ -51,29 +58,26 @@ class Trainer{
     //fighting
 
   }
-/*
-  catch() {
-    // hey trainer u have encountered a jashkjfhjahj do u want to catch it (y/n) run or catch
-    // pseudocode: if (no) { return;}
 
-    // create a new instance of a specific pokemon
-    // that would be dependent on randomness
-    // int catchPercentage = [specific instance of pokemon].getrarity();
-    int catchper = 100;
-    if (rarity == 1) {
-      catchper = 70;
+   void Catch(){
+     float slay = random(1);
+     if (slay < 0.6) {
+      //common pokemon
+      int ind = (int) random(common.size());
+      common.get(ind);
+      }
+    else if (slay < 0.9) {
+     //uncommon pokemon 
+     int ind = (int) random(uncommon.size());
+      uncommon.get(ind);
     }
-    if (rarity == 2) {
-      catchper = 40;
-    }(
-    if rarity == 3) {
-      catchper = 10;
+    else {
+      //rare pokemon
+     int ind = (int) random(rare.size());
+      rare.get(ind);
     }
-    if berryused {
-      catchper += [specific instance of item].drarity();
-    }
+    
   }
-*/
   void printBackpack() {
     //text(<text>, x-cor,y-cor)
 
@@ -103,5 +107,28 @@ class Trainer{
       }
   }
     return temp;
+  }
+  void pokes() {
+
+      String[] clines = loadStrings("common.csv");
+       for (int i=1; i < clines.length; i++) {
+        String[] tokens = splitTokens(clines[i], ",");
+        Pokemon com = new Pokemon(tokens[0], int(tokens[1]), int(tokens[2]), (tokens[3]));
+        common.add(com);
+       }
+
+      String[] ulines = loadStrings("uncommon.csv");
+       for (int i=1; i < ulines.length; i++) {
+        String[] tokens = splitTokens(ulines[i], ",");
+        Pokemon ucom = new Pokemon(tokens[0], int(tokens[1]), int(tokens[2]), (tokens[3]));
+        uncommon.add(ucom);
+       }
+
+      String[] rlines = loadStrings("rare.csv");
+       for (int i=1; i < rlines.length; i++) {
+        String[] tokens = splitTokens(rlines[i], ",");
+        Pokemon rcom = new Pokemon(tokens[0], int(tokens[1]), int(tokens[2]), (tokens[3]));
+        rare.add(rcom);
+       }
   }
 }
