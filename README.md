@@ -20,3 +20,8 @@ v3: utilizing move to run the Trainer function associated with moving the sprite
 started working on reading the csv file and processing it. <br>
 v4: Implemented wallet and wallet counter
 v5:
+v6: implemented catch probabilities (common, uncommon, rare pokemon) and how likely
+the user is to catch in general. user is taken to a catch page, where they encounter a
+pokemon.
+v7: implemented ballThrow to throw a pokeball when you press 'p'
+v8: fixed ballThrow's curve so that it's an appropriate parabola.

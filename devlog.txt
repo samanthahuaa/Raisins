@@ -259,6 +259,19 @@ Nada :: not available
 Samantha :: Worked out the curve for the pokeball animation. Removed redundant code.
 ==============================================================
 
+2022-06-0
+--------------------------------------------------------------
+Ruby :: did some math to figure out the curve. pulled up desmos to demonstrate
+how the curve shifts should work
+Nada :: edited the readme. 
+Samantha :: brought TRF and TNH up to speed on ball curve. finished UML diagrams
+with the correct arrow types.
+
+All :: worked on adjusting exponents/vars to create a parabolic curve, and successfully
+did so.
+==============================================================
+
+
 TEMPLATE:
 2022-06-0
 --------------------------------------------------------------

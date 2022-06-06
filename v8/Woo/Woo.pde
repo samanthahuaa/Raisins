@@ -60,7 +60,6 @@ void draw(){
     image(poke, 500, 555);
     if(thrown){
        player.ballThrow();
-       
     }
   }
   else {
