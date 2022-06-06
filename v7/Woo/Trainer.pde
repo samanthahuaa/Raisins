@@ -20,26 +20,12 @@ class Trainer{
   PImage pokeballz;
   float beginX = 100;
   float beginY = 555;
-  float endX = 300;
-  float endY = 400;
-  float distX = 200;
-  float distY = 155;
-  float exponent = 2;
+  float distX = 400;
+  float distY = 200;
   float pbX = 100;
   float pbY = 555;
   float step = 0.01;
   float pct = 0.0;
-  
-  //round 2
-  float BbeginX = 300;
-  float BbeginY = 400;
-  float BendX = 500;
-  float BendY = 555;
-  float BdistX = 200;
-  float BdistY = 155;
-  float BpbX = 300;
-  float BpbY = 400;
-  float Bpct = 0.0;
 
   //constructor
   Trainer (){
@@ -117,21 +103,20 @@ class Trainer{
     return encounter;
   }
   
-  void ballThrow(){
+  boolean ballThrow(){
     String urlC = "assets/pokeball.png";
-    pokeballz = loadImage("assets/pokeball.png", "png");
+    pokeballz = loadImage(urlC, "png");
     image(pokeballz, pbX, pbY);
     pct += step;
-    if (pct < 1.0) {
+    if (pct < 0.5) {
       pbX = beginX + (pct * distX);
-      pbY = beginY - (pow(pct, exponent) * distY);
+      pbY = beginY - (pow(pct*2, 2) * distY);
+    } 
+    else if (pct < 1.0) {
+      pbX = beginX + (pct * distX);
+      pbY = beginY  - (pow((1-pct)*2, 2) * distY);
     }
-    if (Bpct < 1.0) {
-      BpbX = BbeginX + (Bpct * BdistX);
-      BpbY = BbeginY + (pow(Bpct, exponent) * BdistY);
-    }
-    //fill(255);
-    //ellipse(x, y, 20, 20);
+    return false;
   }
   
   void printBackpack() {

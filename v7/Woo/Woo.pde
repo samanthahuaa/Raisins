@@ -63,35 +63,35 @@ void draw(){
     }
   }
   else {
-  image(Img, 0, 0);
-  image(user, playerX, playerY);
-  image(coin, 10, 10);
-
-  fill(250);
-  textFont(book);
-  textSize(23);
-  text("Pokecoins", 30, 25);
-  textSize(27);
-  text(wallet, 115, 80);
-
-  if (showTutorial) {
-    tutorial();
-  }
-
-  // if the player goes past the borders of the screen, transport them to the other
-  // side of the screen
-  if(playerX < -65){
-    playerX = 725;
-  }
-  else if(playerX > 725){
-    playerX = -65;
-  }
-  else if(playerY < -65){
-    playerY = 811;
-  }
-  else if(playerY > 811){
-    playerY = -65;
-  }
+    image(Img, 0, 0);
+    image(user, playerX, playerY);
+    image(coin, 10, 10);
+  
+    fill(250);
+    textFont(book);
+    textSize(23);
+    text("Pokecoins", 30, 25);
+    textSize(27);
+    text(wallet, 115, 80);
+  
+    if (showTutorial) {
+      tutorial();
+    }
+  
+    // if the player goes past the borders of the screen, transport them to the other
+    // side of the screen
+    if(playerX < -65){
+      playerX = 725;
+    }
+    else if(playerX > 725){
+      playerX = -65;
+    }
+    else if(playerY < -65){
+      playerY = 811;
+    }
+    else if(playerY > 811){
+      playerY = -65;
+    }
   }
 }
 

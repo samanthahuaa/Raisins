@@ -248,7 +248,15 @@ Samantha :: Found a tutorial on the processing library about how to move objects
 on a curved line. Brought TNH up to speed.
 
 All :: Followed the tutorial to implement a parabolic curve to the pokeball's
-movement. Worked on Catch() method so that it would only happen once.
+movement. Worked on Catch() method so that it would only happen once. Discussed
+whether the pokeball animation should be in Woo or in Trainer
+==============================================================
+
+2022-06-05 (at home)
+--------------------------------------------------------------
+Ruby :: not available
+Nada :: not available
+Samantha :: Worked out the curve for the pokeball animation. Removed redundant code.
 ==============================================================
 
 TEMPLATE:
