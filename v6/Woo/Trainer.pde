@@ -26,7 +26,7 @@ class Trainer{
     rare = new ArrayList<Pokemon>();
     // give the user a starting pokemon
     //storage.add(pokedex[random(pokedex.length)]);
-
+    yas = false;
     pokedex = pokedex();
     pokes();
   }

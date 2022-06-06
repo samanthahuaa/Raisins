@@ -25,7 +25,7 @@ class Trainer{
   float pbX = 100;
   float pbY = 555;
   float step = 0.01;
-  float pct = 0.0;
+  float pct = 0.5;
 
   //constructor
   Trainer (){
@@ -108,13 +108,9 @@ class Trainer{
     pokeballz = loadImage(urlC, "png");
     image(pokeballz, pbX, pbY);
     pct += step;
-    if (pct < 0.5) {
-      pbX = beginX + (pct * distX);
-      pbY = beginY - (pow(pct*2, 2) * distY);
-    } 
-    else if (pct < 1.0) {
-      pbX = beginX + (pct * distX);
-      pbY = beginY  - (pow((1-pct)*2, 2) * distY);
+    if (pct < 1.5) {
+      pbX = beginX -200 + (pct * distX);
+      pbY = beginY  -177+ (pow((1-pct)*2, 2) * distY);
     }
     return false;
   }
