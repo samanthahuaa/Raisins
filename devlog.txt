@@ -228,6 +228,29 @@ file.
 All :: Worked through an error in the process of reading the csv file.
 ==============================================================
 
+2022-06-05 (at home)
+--------------------------------------------------------------
+Ruby :: Re-sized every pokemon png image, created a catch screen
+and placed the pokemon and player sprite on the ground. Was able to
+start encountering pokemon.
+Nada :: not available
+Samantha :: not available
+==============================================================
+
+2022-06-05 (at home)
+--------------------------------------------------------------
+Ruby :: Brought TNH and TSH up to speed. Worked on curve of ballThrow. Came up
+with boolean thrown. Came up with idea of creating a second set of variables for
+ballThrow.
+Nada :: Found and added pokeball image, created ballThrow() method. Worked
+on curve of ballThrow. Implemented thrown variable.
+Samantha :: Found a tutorial on the processing library about how to move objects
+on a curved line. Brought TNH up to speed.
+
+All :: Followed the tutorial to implement a parabolic curve to the pokeball's
+movement. Worked on Catch() method so that it would only happen once.
+==============================================================
+
 TEMPLATE:
 2022-06-0
 --------------------------------------------------------------
