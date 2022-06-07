@@ -303,6 +303,7 @@ Ruby :: Decided ballThrow() should return a float instead of a boolean so that t
 image of the Pokeball would only be removed when the animation was completely
 done. Found an issue where the wallet could have a negative number of coins. (debt
 is a big problem in the world and we should PROTECT our players. (no debt allowed))
+proposed that the
 Nada :: Brought TSH and TRF up to speed on what she did. Noticed an if statement
 was missing which is why the pokeball animation was running out of turn tsk tsk
 Samantha :: Researched how to remove an image in processing. Came to the conclusion
@@ -311,7 +312,9 @@ Noticed that there was a bug in the code where the pokeball animation was runnin
 without pressing the p key.
 
 All :: Established the prices of berries and pokeballs. started working on printing
-the contents of the backpack
+the contents of the backpack. debated whether backpack inst var should exist and
+how it should be used to display the number of berries and pokeballs the player
+has. Decide d
 ==============================================================
 
 
