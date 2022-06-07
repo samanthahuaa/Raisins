@@ -71,6 +71,7 @@ void draw(){
     if(thrown){
        player.ballThrow();
     }
+
   }
   //shop
   else if(playerX > 480 && playerX < 630 && playerY > 125 && playerY < 275){
@@ -88,10 +89,10 @@ void draw(){
     image(pokeballz, 680, 605);
     
     //print mouse coors just to help
-    textSize(100);
-    fill(0);
-    text(mouseX, 100, 200);
-    text(mouseY, 100, 300);
+    //textSize(100);
+    //fill(0);
+    //text(mouseX, 100, 200);
+    //text(mouseY, 100, 300);
     
     //coin reappearance
     image(coin, 10, 10);
@@ -170,6 +171,9 @@ void keyPressed(){
       showTutorial = false;
     }
   }
+  else if (key == 'x') {
+     player.endCatch();
+  }
   else if (key == 'p') {
     thrown = true;
   }
@@ -182,8 +186,9 @@ void mouseClicked() {
  if(inShop){
     
   //did you click on the berry?
-  if(mouseX > 695 && mouseX < 750 && mouseY > 550 && mouseY < 600){
+  if(mouseX > 695 && mouseX < 750 && mouseY > 550 && mouseY < 600 && wallet >= 7){
     Items berry = new Items(0.5, true, "berry");
+    wallet -=7;
     player.getBackpack().add(berry);
     //lil popup
     fill(250);
@@ -193,9 +198,10 @@ void mouseClicked() {
     text("you just bought... a berry!",450,650);
   }
  //pokeball?
-  else if(mouseX > 695 && mouseX < 750 && mouseY > 615 && mouseY < 675){
+  else if(mouseX > 695 && mouseX < 750 && mouseY > 615 && mouseY < 675 && wallet >=5){
     Items pokeball = new Items(0.3, true, "pokeball");
     player.getBackpack().add(pokeball);
+    wallet -=5;
     //lil popup
     fill(250);
     rect(410,580,270,150,100);

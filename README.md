@@ -25,3 +25,5 @@ the user is to catch in general. user is taken to a catch page, where they encou
 pokemon.
 v7: implemented ballThrow to throw a pokeball when you press 'p'
 v8: fixed ballThrow's curve so that it's an appropriate parabola.
+v9: berry and pokeball are available to purchase. creation of shop
+v10:

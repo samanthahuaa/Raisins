@@ -105,9 +105,12 @@ class Trainer{
   String getPoke() {
     return encounter;
   }
+  void endCatch() {
+    catching = false;
+  }
 
   //ball curve
-  boolean ballThrow(){
+  float ballThrow(){
     String urlC = "assets/pokeball.png";
     pokeballz = loadImage(urlC, "png");
     image(pokeballz, pbX, pbY);
@@ -116,7 +119,7 @@ class Trainer{
       pbX = beginX -200 + (pct * distX);
       pbY = beginY  -177+ (pow((1-pct)*2, 2) * distY);
     }
-    return false;
+    return pct;
   }
 
   ArrayList<Items> getBackpack(){
@@ -125,7 +128,6 @@ class Trainer{
   
   void printBackpack() {
     //text(<text>, x-cor,y-cor)
-
   }
 
   void printStorage() {
@@ -154,9 +156,9 @@ class Trainer{
     return temp;
   }
   boolean isCatch() {
-    return false;
-    //return catching;
+    return catching;
   }
+  
   void pokes() {
 
       String[] clines = loadStrings("common.csv");
