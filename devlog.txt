@@ -259,11 +259,11 @@ Nada :: not available
 Samantha :: Worked out the curve for the pokeball animation. Removed redundant code.
 ==============================================================
 
-2022-06-0
+2022-06-06 (in class)
 --------------------------------------------------------------
 Ruby :: did some math to figure out the curve. pulled up desmos to demonstrate
 how the curve shifts should work
-Nada :: edited the readme. 
+Nada :: edited the readme.
 Samantha :: brought TRF and TNH up to speed on ball curve. finished UML diagrams
 with the correct arrow types.
 
@@ -271,6 +271,20 @@ All :: worked on adjusting exponents/vars to create a parabolic curve, and succe
 did so.
 ==============================================================
 
+2022-06-06 (at home)
+--------------------------------------------------------------
+Ruby :: Suggested we remove potions in our game because of time purposes.
+Guided TNH through editing the background image for our store
+Nada :: Picked out a lil shop image. Edited the dimensions of the background image
+for our store.
+Samantha :: Brought up the discussion about how the user would exit with the shop
+and how we should implement the exit. Came up with the idea to place the items on
+the little stools in the store.
+
+All :: We started creating the shop and decided it would be a separate screen where
+the user would click on what they wanted to buy to purchase it. Picked out the
+location on the screen where our shop would reside.
+==============================================================
 
 TEMPLATE:
 2022-06-0
