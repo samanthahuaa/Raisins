@@ -54,11 +54,11 @@ class Trainer{
     // the player figure is actually moving => done in Woo.pde
 
     float tmp = random(1);
-    if (tmp < 0.3) {
+    if (tmp < 0.2) {
       catching = true;
       Catch();
     }
-    else if (tmp < 0.5) {
+    else if (tmp < 0.4) {
       fight();
     }
     return;
@@ -122,13 +122,7 @@ class Trainer{
     return pct;
   }
 
-  ArrayList<Items> getBackpack(){
-    return backpack;
-  }
   
-  void printBackpack() {
-    //text(<text>, x-cor,y-cor)
-  }
 
   void printStorage() {
 
@@ -158,7 +152,7 @@ class Trainer{
   boolean isCatch() {
     return catching;
   }
-  
+
   void pokes() {
 
       String[] clines = loadStrings("common.csv");

@@ -48,14 +48,14 @@ tales of wisdom gained...
 ==============================================================
 
 
-2022-05-26
+2022-05-26 (in class)
 --------------------------------------------------------------
 Ruby :: Created the propro document, completed the showcase section
 Nada :: Worked on propro document, completed the extends section
 Samantha :: Created the team flag, completed the Solidify section of the propro
 ==============================================================
 
-2022-05-30
+2022-05-30 (in class)
 --------------------------------------------------------------
 Ruby :: Explained how TreeNode should have type Pokemon in the cargo. Proposed that
 pokedex should just be a csv file that our program would read.
@@ -297,26 +297,55 @@ for a brief second)
 Samantha :: not available
 ==============================================================
 
-2022-06-07
+2022-06-07 (in class)
 --------------------------------------------------------------
 Ruby :: Decided ballThrow() should return a float instead of a boolean so that the
 image of the Pokeball would only be removed when the animation was completely
 done. Found an issue where the wallet could have a negative number of coins. (debt
 is a big problem in the world and we should PROTECT our players. (no debt allowed))
-proposed that the
+proposed that the backpack be removed and in its place we have counters for
+berries and pokeballs so that the user can constantly see how many of each they have
 Nada :: Brought TSH and TRF up to speed on what she did. Noticed an if statement
 was missing which is why the pokeball animation was running out of turn tsk tsk
 Samantha :: Researched how to remove an image in processing. Came to the conclusion
 that other images simply have to layer over the one you are trying to remove.
 Noticed that there was a bug in the code where the pokeball animation was running
-without pressing the p key.
+without pressing the p key. Was concerned that removing the backpack would make
+the program less complex but agreed with Ruby's idea to create counters instead of
+a backpack because of our time constraints.
 
 All :: Established the prices of berries and pokeballs. started working on printing
 the contents of the backpack. debated whether backpack inst var should exist and
 how it should be used to display the number of berries and pokeballs the player
-has. Decide d
+has. Decided that backpack would be removed and instead we have counters.
 ==============================================================
 
+2022-06-07 (CS Dojo)
+--------------------------------------------------------------
+Ruby :: not available
+Nada :: Proposed that we should change the conditions for the tutorial popping up.
+instead of pressing t to open the tutorial and then pressing x to close it, the
+player would just press and hold t to see the tutorial. once they let go, the
+tutorial would close. Referenced an old project she had worked on to use as the
+basis for our keyReleased() code. Changed the rates of the user finding a wild
+pokemon and battling another trainer. Implemented a button in the catch
+screen so that the user can flee the pokemon. Encountered a bug where the berry image
+moves after entering the shop. worked on, yelled at, completely frustrated with the
+visuals for the counters. but we're continuing this journey because in our hearts
+we have a lot of peace and love.
+Samantha :: Referenced the processing library to see how to implement keyReleased()
+Found out why the tutorial wasn't showing up in the catch screen and the shop
+(the draw function was placing the other elements like the background and sprite
+over the tutorial so we never got to see it) Worked on updating the popup confirmation
+that the user can see after they purchase something in the store so that it stays
+on the screen for a longer time. Researched how to use time methods to show the
+popup animation for a longer amount of time. Experimented with different combinations
+of loops to have the popup show up for longer
+
+All :: worked in v10 to add more functionality to the purchasing action in the shop
+and started creating the counters for berry and pokeballs. New button to flee in
+catch screen.
+==============================================================
 
 TEMPLATE:
 2022-06-0
