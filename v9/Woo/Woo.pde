@@ -87,6 +87,12 @@ void draw(){
     pokeballz.resize(75,75);
     image(pokeballz, 680, 605);
     
+    //print mouse coors just to help
+    textSize(100);
+    fill(0);
+    text(mouseX, 100, 200);
+    text(mouseY, 100, 300);
+    
     //coin reappearance
     image(coin, 10, 10);
     fill(250);
@@ -170,6 +176,34 @@ void keyPressed(){
   else if (key == 'r') {
     //berries
   }
+}
+
+void mouseClicked() {
+ if(inShop){
+    
+  //did you click on the berry?
+  if(mouseX > 695 && mouseX < 750 && mouseY > 550 && mouseY < 600){
+    Items berry = new Items(0.5, true, "berry");
+    player.getBackpack().add(berry);
+    //lil popup
+    fill(250);
+    rect(410,580,270,150,100);
+    fill(0);
+    textSize(15);
+    text("you just bought... a berry!",450,650);
+  }
+ //pokeball?
+  else if(mouseX > 695 && mouseX < 750 && mouseY > 615 && mouseY < 675){
+    Items pokeball = new Items(0.3, true, "pokeball");
+    player.getBackpack().add(pokeball);
+    //lil popup
+    fill(250);
+    rect(410,580,270,150,100);
+    fill(0);
+    textSize(15);
+    text("you just bought... a pokeball!",450,650);
+  }
+ }
 }
 
 void tutorial(){

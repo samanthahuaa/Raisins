@@ -119,6 +119,9 @@ class Trainer{
     return false;
   }
 
+  ArrayList<Items> getBackpack(){
+    return backpack;
+  }
   
   void printBackpack() {
     //text(<text>, x-cor,y-cor)

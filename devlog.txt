@@ -263,7 +263,7 @@ Samantha :: Worked out the curve for the pokeball animation. Removed redundant c
 --------------------------------------------------------------
 Ruby :: did some math to figure out the curve. pulled up desmos to demonstrate
 how the curve shifts should work
-Nada :: edited the readme.
+Nada :: edited the readme, contributed to the discussion.
 Samantha :: brought TRF and TNH up to speed on ball curve. finished UML diagrams
 with the correct arrow types.
 
@@ -286,6 +286,18 @@ the user would click on what they wanted to buy to purchase it. Picked out the
 location on the screen where our shop would reside.
 ==============================================================
 
+2022-06-07 (in... another class)
+--------------------------------------------------------------
+Ruby :: not available
+Nada :: added mouseClicked() method to Woo; added functionality so that in
+the shop, if the user clicks on the berry, a berry is added to the backpack,
+and if they click on the pokeball, a pokeball is added to the backpack. Both also
+have their own lil popup screen, but the screen only appears when you click (so
+for a brief second)
+Samantha :: not available
+
+All ::
+==============================================================
 TEMPLATE:
 2022-06-0
 --------------------------------------------------------------
