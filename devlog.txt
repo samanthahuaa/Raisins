@@ -31,6 +31,12 @@ separate csv files for the different levels of rarity bc it makes spawning pokem
 of different rarities easier. (we wanted to have different rates of spawning for
 the different levels of rarity)
 
+we eliminated the ArrayList of Items that we planned to have, which we called a
+backpack. because a backpack only holds two types of items, berries and pokeballs,
+we decided to get rid of the notion of a backpack, and replace it with counters for
+berries and pokeballs the user has, and then display those at the top. while this
+perhaps is harder to visualize, it's more efficient when it comes to implementation.
+
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 tales of wisdom gained...
@@ -345,6 +351,27 @@ of loops to have the popup show up for longer
 All :: worked in v10 to add more functionality to the purchasing action in the shop
 and started creating the counters for berry and pokeballs. New button to flee in
 catch screen.
+==============================================================
+
+2022-06-07 (at home)
+--------------------------------------------------------------
+Ruby :: Came up with the idea to use a sort of pause/hold method to stop the
+screen when the popup in shop is displayed; fixed the issue of changing ball count
+when catching. Suggested that the counters be displayed in all of the backgrounds.
+Suggested different places to place the delay method so that the animation would
+run properly (did not end up resolving this issue but we just moved on because
+of time)
+Nada :: Fixed up the graphics of the berry and pokeball counter, edited readme,
+added to tutorial
+Samantha :: Consulted the processing library and found the delay() method. ran code
+from the wrong version---- but it's ok....... :), moved ball and berry counts to
+the Trainer class. Suggested moving berry and pokeball counters to the Trainer
+class because that's more of a Trainer responsibility than a Woo/driver file
+responsibility. Suggested that the catchPct should be a local variable in the
+catch method because it is not needed anywhere else.
+
+All :: Started working on berry throw. Decided on the catchPct for the various
+level of pokemon. 
 ==============================================================
 
 TEMPLATE:

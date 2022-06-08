@@ -18,12 +18,14 @@ the tutorial and using the x key to close it. [REMEMBER TO PUT IN ALL OF THE
 OTHER FILES]<br>
 v3: utilizing move to run the Trainer function associated with moving the sprite.
 started working on reading the csv file and processing it. <br>
-v4: Implemented wallet and wallet counter
+v4: Implemented wallet and wallet counter <br>
 v5:
 v6: implemented catch probabilities (common, uncommon, rare pokemon) and how likely
 the user is to catch in general. user is taken to a catch page, where they encounter a
-pokemon.
-v7: implemented ballThrow to throw a pokeball when you press 'p'
-v8: fixed ballThrow's curve so that it's an appropriate parabola.
-v9: berry and pokeball are available to purchase. creation of shop
-v10:
+pokemon. <br>
+v7: implemented ballThrow to throw a pokeball when you press 'p' <br>
+v8: fixed ballThrow's curve so that it's an appropriate parabola. <br>
+v9: berry and pokeball are available to purchase. creation of shop <br>
+v10: implemented berry counter and pokeball counter, eliminated backpack, created "flee"
+button in catch screen (lil coward.....), started modeling berry and pokeball icons after
+coin display <br>

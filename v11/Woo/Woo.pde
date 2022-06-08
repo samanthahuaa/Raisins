@@ -18,8 +18,6 @@ float playerX = 300;
 float playerY = 418;
 
 int wallet;
-int pokeballc;
-int berryc;
 
 boolean showTutorial = true;
 
@@ -34,8 +32,6 @@ boolean showBallPopup;
 void setup(){
   // create a new instance of Trainer to represent the player
   player = new Trainer();
-  pokeballc = 10;
-  berryc = 1;
   // create the screen
   size(772,836);
 
@@ -179,21 +175,21 @@ void draw(){
 
     image(shoP, 555, 200);
 
-    image(berry, 170, 10);
+    image(berry, 200, 10);
     fill(250);
     textFont(book);
     textSize(23);
-    text("Berries", 220, 25);
+    text("Berries", 200, 25);
     textSize(27);
-    text(berryc, 185, 80);
+    text(player.getBerryCount(), 280, 80);
 
-    image(pokeball, 330, 20);
+    image(pokeball, 350, 25);
     fill(250);
     textFont(book);
     textSize(23);
-    text("Pokeballs", 350, 25);
+    text("Pokeballs", 340, 25);
     textSize(27);
-    text(pokeballc, 450, 80);
+    text(player.getBallCount(), 470, 80);
 
     if (showTutorial) {
       tutorial();
@@ -249,9 +245,11 @@ void keyPressed(){
   }
   else if (key == 'p') {
     thrown = true;
+    player.setBallCount(-1);
   }
   else if (key == 'r') {
     //berries
+    player.berryThrow();
   }
 }
 
@@ -276,32 +274,32 @@ void mouseClicked() {
     Items berry = new Items(0.5, true, "berry");
     wallet -=7;
     showBerryPopup = true;
-    print("ok yes queen");
-    berryc++;
+    player.setBerryCount(1);
   }
  //pokeball?
   else if(mouseX > 695 && mouseX < 750 && mouseY > 615 && mouseY < 675 && wallet >=5){
     Items pokeball = new Items(0.3, true, "pokeball");
     wallet -=5;
     showBallPopup = true;
-    print("ok yes royalty");
-    pokeballc++;
+    player.setBallCount(1);
   }
  }
 }
 
 void tutorial(){
    fill(250);
-   rect(120,300,500,300,100);
+   rect(120,350,500,300,100);
    fill(0);
    textFont(book);
    textSize(24);
    text("Welcome to the Raisin Pokemon game!",160,370);
    textSize(16);
    text("To move, use the WASD or arrow keys", 160, 400);
-   text("to re-open the tutorial press the t key", 160, 430);
-   text("to close this tutorial press t.", 160,460);
-   text("if you ever want to open this up again, press and hold t", 160, 490);
+   text("to close this tutorial press t.", 160,430);
+   text("if you ever want to open this up again, press and hold t", 160, 460);
+   text("you might encounter a pokemon as you explore",160,490);
+   text("press p to catch it! for that, you need pokeballs",160,520);
+   text("you can use berries to help; buy them in the shop!",160,550);
 
 }
 
