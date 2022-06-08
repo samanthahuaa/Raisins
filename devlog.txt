@@ -371,7 +371,20 @@ responsibility. Suggested that the catchPct should be a local variable in the
 catch method because it is not needed anywhere else.
 
 All :: Started working on berry throw. Decided on the catchPct for the various
-level of pokemon. 
+level of pokemon.
+==============================================================
+
+2022-06-08 (in class)
+--------------------------------------------------------------
+Ruby :: proposed making the pokemon disappear instead of the pokeball.
+Nada :: proposed and created second set of variables for berryThrow() to differentiate
+from ballThrow()
+Samantha :: modified berryThrow so it WORKS, added limits so that you can only throw
+the number of berries you have. Noticed that the berry and pokeball animation weren't
+working because they both depended on the same set of variables.
+
+All :: changed ballThrow and berryThrow to boolean methods, got the pokeball and berry
+to disappear after using them, with the counts updated.
 ==============================================================
 
 TEMPLATE:
