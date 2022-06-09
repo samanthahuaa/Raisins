@@ -179,7 +179,17 @@ class Trainer{
 
 
   void printStorage() {
-
+    fill(250);
+    rect(70,150,650,100,100);
+    fill(0);
+    textSize(15);
+    int textX = 0;
+    //constantly prints out because it's called in draw
+    for(Pokemon guppy : storage){
+      text(guppy.getName() + ",",120+textX,200);
+      textX+=100;
+      //break;
+    }
   }
 
   ArrayList<TreeNode> pokedex() {

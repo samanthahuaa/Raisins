@@ -391,7 +391,11 @@ to disappear after using them, with the counts updated.
 --------------------------------------------------------------
 Ruby :: created booleans berryThrow and pokeThrow in Trainer class, worked on catch
 percentage so it works
-Nada :: updated tutorial and graphics and readme
+Nada :: updated tutorial and graphics and readme; started printStorage method in Trainer
+class, modeled after tutorial method ; printStorage currently constantly prints out
+the name of the pokemon, because it's called in the draw method, which is problematic
+because that means that the first pokemon's name will constantly be printed out (this
+method is called by the g key)
 Samantha :: updated flowchart
 
 All :: worked on catch percentage

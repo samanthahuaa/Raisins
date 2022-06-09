@@ -20,6 +20,7 @@ float playerY = 418;
 int wallet;
 
 boolean showTutorial = true;
+boolean storage = false;
 
 boolean thrown = false;
 boolean berryUsed = false;
@@ -131,13 +132,17 @@ void draw(){
     }
     if (player.getpokthrow() == true) {
       float caught = random(1);
-      if(caught <= player.getcatchPct()) {
+      if(caught <= player.getPct()) {
         player.setStorage(player.getenc());
         text("you caught a pokemon!", 300, 400);
       }
     }
     if(showTutorial){
      tutorial();
+    }
+    if(storage){
+      player.printStorage();
+      //storage = false;
     }
   }
   //shop
@@ -243,6 +248,9 @@ void draw(){
     if (showTutorial) {
       tutorial();
     }
+    if(storage){
+      player.printStorage();
+    }
 
     // if the player goes past the borders of the screen, transport them to the other
     // side of the screen
@@ -267,6 +275,9 @@ void keyPressed(){
   if(key == 't') {
       showTutorial = true;
     }
+  if(key == 'g'){
+    storage = true;
+  }
 
   // if the player moved, call the move function within Trainer
   if (!player.isCatch()) {
@@ -310,6 +321,9 @@ void keyReleased(){
  if(key == 't'){
   showTutorial = false;
  }
+ if(key == 'g'){
+   storage = false;
+ }
 }
 
 void mouseClicked() {
@@ -340,19 +354,20 @@ void mouseClicked() {
 
 void tutorial(){
    fill(250);
-   rect(120,350,500,300,100);
+   rect(120,350,500,350,100);
    fill(0);
    textFont(book);
    textSize(22);
-   text("Welcome to the Raisin Pokemon game!",160,370);
+   text("Welcome to the Raisin Pokemon game!",160,385);
    textSize(16);
-   text("To move, use the WASD or arrow keys", 160, 400);
-   text("to close this tutorial press t.", 160,430);
-   text("if you ever want to open this up again, press and hold t", 160, 460);
-   text("you might encounter a pokemon as you explore",160,490);
-   text("press p to catch it! for that, you need pokeballs",160,520);
-   text("you can use berries to help you catch! press r",160,550);
-   text("use pokecoins to buy berries and pokeballs in the shop!",160,580);
+   text("to move, use the WASD or arrow keys", 160, 415);
+   text("to close this tutorial press t.", 160,445);
+   text("if you ever want to open this up again, press and hold t", 160, 475);
+   text("you might encounter a pokemon as you explore",160,505);
+   text("press p to catch it! for that, you need pokeballs",160,535);
+   text("you can use berries to help you catch! press r",160,565);
+   text("use pokecoins to buy berries and pokeballs in the shop!",160,595);
+   text("press and hold g to see what pokemon you have",160,625);
 
 }
 
