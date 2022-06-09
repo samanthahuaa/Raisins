@@ -3,10 +3,12 @@
 
 ## Project Description
  A totally cool pokemon game in which you can catch and battle with pokemon!
+
 ## How-to-launch
 1. open a terminal session
 2. clone this repo
 3. run the command ```Processing Woo.pde``` from the root of the cloned repo
+
 ## Different Versions
 v0: created all of the files and outlined what we would have in each and what it
 can do. <br>
@@ -19,7 +21,8 @@ OTHER FILES]<br>
 v3: utilizing move to run the Trainer function associated with moving the sprite.
 started working on reading the csv file and processing it. <br>
 v4: Implemented wallet and wallet counter <br>
-v5:
+v5: added constructor to Pokemon class, added common, uncommon, and rare pokemon,
+gave user more possessions (backpack, storage, pokedex), started parsing of csv
 v6: implemented catch probabilities (common, uncommon, rare pokemon) and how likely
 the user is to catch in general. user is taken to a catch page, where they encounter a
 pokemon. <br>
@@ -29,3 +32,5 @@ v9: berry and pokeball are available to purchase. creation of shop <br>
 v10: implemented berry counter and pokeball counter, eliminated backpack, created "flee"
 button in catch screen (lil coward.....), started modeling berry and pokeball icons after
 coin display <br>
+v11: implemented berryThrow. updated count of pokeballs when a pokeball was used  <br>
+v12: catch percentage works! updated visuals.

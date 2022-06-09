@@ -16,10 +16,12 @@ class Trainer{
   ArrayList<Pokemon> rare;
   boolean catching;
   String encounter;
-
+  boolean berrthrow;
   //counters used by Woo
   int berryCount;
   int ballCount;
+  float catchPct;
+  Pokemon enc;
 
   //pokeball
   PImage pokeballz;
@@ -31,7 +33,7 @@ class Trainer{
   float pbY = 555;
   float step = 0.01;
   float pct = 0.5;
-
+  boolean pokthrow;
   //berry
   PImage berrz;
   float bBeginX = 100;
@@ -98,38 +100,61 @@ class Trainer{
   //catching
    void Catch(){
      catching = true;
-     float catchPct = 1;
+     catchPct = 1;
      float slay = random(1);
      PImage poke;
+
      if (slay < 0.6) {
       //common pokemon
       int ind = (int) random(common.size());
-      Pokemon enc = common.get(ind);
+      enc = common.get(ind);
       encounter = enc.getImage();
       catchPct = 0.7;
       }
     else if (slay < 0.9) {
      //uncommon pokemon
      int ind = (int) random(uncommon.size());
-      Pokemon enc = uncommon.get(ind);
+      enc = uncommon.get(ind);
       encounter = enc.getImage();
       catchPct = 0.5;
     }
     else {
       //rare pokemon
      int ind = (int) random(rare.size());
-      Pokemon enc = rare.get(ind);
+      enc = rare.get(ind);
       encounter = enc.getImage();
       catchPct = 0.3;
     }
   }
+  float getPct(){
+  return catchPct;
+  }
+  void setPct(float x) {
+  catchPct +=x;
+  }
+  boolean getberrthrow() {
+   return berrthrow;
+  }
+  void setberrthrow() {
+  berrthrow = false;
+  }
+
+  boolean getpokthrow(){
+  return pokthrow;
+  }
+
   String getPoke() {
     return encounter;
   }
   void endCatch() {
     catching = false;
   }
-
+ Pokemon getenc() {
+ return enc;
+ }
+ void setStorage(Pokemon x) {
+  storage.add(x);
+ }
   //ball curve
   boolean ballThrow(){
     if (ballCount != 0) {
@@ -142,6 +167,7 @@ class Trainer{
         pbY = beginY  -177+ (pow((1-pct)*2, 2) * distY);
         return true;
       }
+      pokthrow = true;
       pct = 0.5;
       pbX = 100;
       pbY = 555;
@@ -228,7 +254,7 @@ class Trainer{
       berrz = loadImage(urlA, "png");
       berrz.resize(75,100);
       image(berrz, bX, bY);
-
+      berrthrow =true;
       bPct += step;
       if (bPct < 1.5) {
         bX = bBeginX -200 + (bPct * bDistX);

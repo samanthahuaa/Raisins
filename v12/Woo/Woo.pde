@@ -96,10 +96,26 @@ void draw(){
     text("you are",620,105);
 
     //print mouse coors just to help
-    textSize(100);
-    fill(0);
-    text(mouseX, 100, 200);
-    text(mouseY, 100, 300);
+    //textSize(100);
+    //fill(0);
+    //text(mouseX, 100, 200);
+    //text(mouseY, 100, 300);
+
+    image(berry, 200, 10);
+    fill(250);
+    textFont(book);
+    textSize(23);
+    text("Berries", 200, 25);
+    textSize(27);
+    text(player.getBerryCount(), 280, 80);
+
+    image(pokeball, 350, 25);
+    fill(250);
+    textFont(book);
+    textSize(23);
+    text("Pokeballs", 340, 25);
+    textSize(27);
+    text(player.getBallCount(), 440, 80);
 
     if(thrown){
        thrown = player.ballThrow();
@@ -108,6 +124,17 @@ void draw(){
       berryUsed = player.berryThrow();
       //delay(1000);
 
+    }
+    if (player.getberrthrow() == true) {
+      player.setPct(0.1);
+      player.setberrthrow();
+    }
+    if (player.getpokthrow() == true) {
+      float caught = random(1);
+      if(caught <= player.getcatchPct()) {
+        player.setStorage(player.getenc());
+        text("you caught a pokemon!", 300, 400);
+      }
     }
     if(showTutorial){
      tutorial();
@@ -316,7 +343,7 @@ void tutorial(){
    rect(120,350,500,300,100);
    fill(0);
    textFont(book);
-   textSize(24);
+   textSize(22);
    text("Welcome to the Raisin Pokemon game!",160,370);
    textSize(16);
    text("To move, use the WASD or arrow keys", 160, 400);
@@ -324,7 +351,8 @@ void tutorial(){
    text("if you ever want to open this up again, press and hold t", 160, 460);
    text("you might encounter a pokemon as you explore",160,490);
    text("press p to catch it! for that, you need pokeballs",160,520);
-   text("you can use berries to help; buy them in the shop!",160,550);
+   text("you can use berries to help you catch! press r",160,550);
+   text("use pokecoins to buy berries and pokeballs in the shop!",160,580);
 
 }
 

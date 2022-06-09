@@ -387,6 +387,16 @@ All :: changed ballThrow and berryThrow to boolean methods, got the pokeball and
 to disappear after using them, with the counts updated.
 ==============================================================
 
+2022-06-08 (at home)
+--------------------------------------------------------------
+Ruby :: created booleans berryThrow and pokeThrow in Trainer class, worked on catch
+percentage so it works
+Nada :: updated tutorial and graphics and readme
+Samantha :: updated flowchart
+
+All :: worked on catch percentage
+==============================================================
+
 TEMPLATE:
 2022-06-0
 --------------------------------------------------------------
