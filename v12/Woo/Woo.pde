@@ -80,6 +80,74 @@ void setup(){
 }
 
 void draw(){
+ if(inShop){
+  //if the player is in the shop, we have some items yay
+  String shopUrl = "assets/shopInside.png";
+  shopInside = loadImage(shopUrl, "png");
+  inShop = true;
+  image(shopInside, 0, 0);
+  image(user, 300, 418);
+  berry = loadImage("assets/berry.png", "png");
+  image(berry, 665, 485);
+  String urlC = "assets/pokeball.png";
+  PImage pokeballz = loadImage(urlC, "png");
+  pokeballz.resize(75,75);
+  image(pokeballz, 680, 605);
+
+  fill(250);
+  rect(600,50,70,70,100);
+  fill(0);
+  textSize(30);
+  text("X",625,95);
+
+  //coin reappearance
+  image(coin, 10, 10);
+  fill(250);
+  textFont(book);
+  textSize(23);
+  text("Pokecoins", 30, 25);
+  textSize(27);
+  //fill(0);
+  text(wallet, 115, 80);
+  if(showTutorial){
+   tutorial();
+  }
+
+  image(berry, 200, 10);
+  fill(250);
+  textFont(book);
+  textSize(23);
+  text("Berries", 200, 25);
+  textSize(27);
+  text(player.getBerryCount(), 280, 80);
+
+  image(pokeball, 350, 25);
+  fill(250);
+  textFont(book);
+  textSize(23);
+  text("Pokeballs", 340, 25);
+  textSize(27);
+  text(player.getBallCount(), 440, 80);
+
+  if (showBerryPopup) {
+    //for (int i = 0; i < 5000; i++) {
+      berryPopup();
+
+    //}
+    showBerryPopup = false;
+  }
+  if (showBallPopup) {
+    //int m = millis();
+    //int limit = m + 5000;
+    //while (m < limit) {
+      ballPopup();
+    //}
+    //for (int i = 0; i < 2000; i++) {
+    //  ballPopup();
+    //}
+    showBallPopup = false;
+  }
+}
   if (player.isCatch()) {
     image(ctch, 0, 0);
     image(user, 100, 555);
@@ -119,12 +187,12 @@ void draw(){
     text(player.getBallCount(), 440, 80);
 
     if(thrown){
-       thrown = player.ballThrow();
+      //throwing pokeball animation
+      thrown = player.ballThrow();
     }
     if(berryUsed){
+      // throwing berry animation
       berryUsed = player.berryThrow();
-      //delay(1000);
-
     }
     if (player.getberrthrow() == true) {
       player.setPct(0.1);
@@ -132,90 +200,33 @@ void draw(){
     }
     if (player.getpokthrow() == true) {
       float caught = random(1);
+      print(caught);
       if(caught <= player.getPct()) {
+        print("caught");
         player.setStorage(player.getenc());
         text("you caught a pokemon!", 300, 400);
+        player.endcatch();
+        return;
       }
+      else if(caught >= 0.9) {
+        text("the pokemon ran away :(",300, 400);
+        player.endcatch();
+        return;
+      }
+      player.endpok();
     }
     if(showTutorial){
      tutorial();
     }
     if(storage){
       player.printStorage();
-      //storage = false;
     }
   }
   //shop
   else if(playerX > 480 && playerX < 630 && playerY > 125 && playerY < 275){
-    //if the player is in the shop, we have some items yay
-    String shopUrl = "assets/shopInside.png";
-    shopInside = loadImage(shopUrl, "png");
     inShop = true;
-    image(shopInside, 0, 0);
-    image(user, 300, 418);
-    berry = loadImage("assets/berry.png", "png");
-    image(berry, 665, 485);
-    String urlC = "assets/pokeball.png";
-    PImage pokeballz = loadImage(urlC, "png");
-    pokeballz.resize(75,75);
-    image(pokeballz, 680, 605);
-
-    //print mouse coors just to help
-    //textSize(100);
-    //fill(0);
-    //text(mouseX, 100, 200);
-    //text(mouseY, 100, 300);
-
-    //coin reappearance
-    image(coin, 10, 10);
-    fill(250);
-    textFont(book);
-    textSize(23);
-    text("Pokecoins", 30, 25);
-    textSize(27);
-    //fill(0);
-    text(wallet, 115, 80);
-    if(showTutorial){
-     tutorial();
-    }
-
-    image(berry, 200, 10);
-    fill(250);
-    textFont(book);
-    textSize(23);
-    text("Berries", 200, 25);
-    textSize(27);
-    text(player.getBerryCount(), 280, 80);
-
-    image(pokeball, 350, 25);
-    fill(250);
-    textFont(book);
-    textSize(23);
-    text("Pokeballs", 340, 25);
-    textSize(27);
-    text(player.getBallCount(), 440, 80);
-
-    if (showBerryPopup) {
-      //for (int i = 0; i < 5000; i++) {
-        berryPopup();
-
-      //}
-      showBerryPopup = false;
-      print("beep");
-    }
-    if (showBallPopup) {
-      //int m = millis();
-      //int limit = m + 5000;
-      //while (m < limit) {
-        ballPopup();
-      //}
-      //for (int i = 0; i < 2000; i++) {
-      //  ballPopup();
-      //}
-      print("boop");
-      showBallPopup = false;
-    }
   }
+
   else {
     image(Img, 0, 0);
     image(user, playerX, playerY);
@@ -304,7 +315,6 @@ void keyPressed(){
     thrown = true;
     if(player.getBallCount() > 0){
       player.setBallCount(-1);
-      print(player.getBallCount());
     }
   }
   else if (key == 'r') {
@@ -348,6 +358,11 @@ void mouseClicked() {
     wallet -=5;
     showBallPopup = true;
     player.setBallCount(1);
+  }
+
+  //exit button yeeheehee
+  else if(mouseX < 670 && mouseX > 600 && mouseY < 120 && mouseY > 50){
+    inShop = false;
   }
  }
 }

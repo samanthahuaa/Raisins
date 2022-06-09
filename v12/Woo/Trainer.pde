@@ -43,6 +43,7 @@ class Trainer{
   float bX = 100;
   float bY = 555;
   float bPct = 0.5;
+  float runpct = 0.9;
 
   //constructor
   Trainer (){
@@ -100,7 +101,7 @@ class Trainer{
   //catching
    void Catch(){
      catching = true;
-     catchPct = 1;
+     catchPct = 0;
      float slay = random(1);
      PImage poke;
 
@@ -109,21 +110,21 @@ class Trainer{
       int ind = (int) random(common.size());
       enc = common.get(ind);
       encounter = enc.getImage();
-      catchPct = 0.7;
+      catchPct = 0.4;
       }
     else if (slay < 0.9) {
      //uncommon pokemon
      int ind = (int) random(uncommon.size());
       enc = uncommon.get(ind);
       encounter = enc.getImage();
-      catchPct = 0.5;
+      catchPct = 0.3;
     }
     else {
       //rare pokemon
      int ind = (int) random(rare.size());
       enc = rare.get(ind);
       encounter = enc.getImage();
-      catchPct = 0.3;
+      catchPct = 0.2;
     }
   }
   float getPct(){
@@ -133,14 +134,14 @@ class Trainer{
   catchPct +=x;
   }
   boolean getberrthrow() {
-   return berrthrow;
+    return berrthrow;
   }
   void setberrthrow() {
-  berrthrow = false;
+    berrthrow = false;
   }
 
   boolean getpokthrow(){
-  return pokthrow;
+    return pokthrow;
   }
 
   String getPoke() {
@@ -176,7 +177,9 @@ class Trainer{
     return false;
   }
 
-
+void endpok() {
+  pokthrow = false;
+}
 
   void printStorage() {
     fill(250);
@@ -215,6 +218,9 @@ class Trainer{
   }
   boolean isCatch() {
     return catching;
+  }
+  void endcatch() {
+    catching = false;
   }
 
   void pokes() {
