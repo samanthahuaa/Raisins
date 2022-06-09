@@ -396,9 +396,24 @@ class, modeled after tutorial method ; printStorage currently constantly prints 
 the name of the pokemon, because it's called in the draw method, which is problematic
 because that means that the first pokemon's name will constantly be printed out (this
 method is called by the g key)
-Samantha :: updated flowchart
+Samantha :: updated flowchart, discussed the nature of catch percentage. unfortunately,
+had to concede to catchPct being a inst var
 
-All :: worked on catch percentage
+All :: worked on catch percentage and the utilization of the catchPct in the
+catch method to include the usage of berries
+==============================================================
+
+2022-06-09 (at home)
+--------------------------------------------------------------
+Ruby :: worked on the catch method.
+Nada :: worked on getting exit button to work in the shop, attempted to reconstruct the
+code around the inShop boolean (cough and failed)
+Samantha :: was printing out variables mid development and thought that there was
+an error with random(1) but the real problem was just that we had another print
+statement we forgot about. the strings were concatenating which made us believe
+we had an error in our program.
+
+All ::
 ==============================================================
 
 TEMPLATE:
