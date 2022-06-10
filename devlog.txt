@@ -68,6 +68,7 @@ while this would've implemented stacks, we decided that implementing evolution t
 priority, because this utilizes trees. this is something that we definitely would've
 implemented if we had the time.
 
+we removed potions because we did not have enough time T-T
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 When planning a project, make sure your goals are realistic for the time given
