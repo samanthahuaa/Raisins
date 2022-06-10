@@ -5,7 +5,8 @@ Nada Hameed
 pd 7
 ---------------------
 Pokemon
-A fun game in which the user can catch pokemon!
+A fun game in which the user can catch pokemon and buy berries to enhance their
+chances of catching pokemon!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -18,13 +19,21 @@ Parsing a CSV file and putting that info into trainer
 Visuals of disappearing images must be overlayed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
-we learned processing just for this project!
+- we learned processing just for this project!
+- we spent far more than 10hws on this project, super cool hehe
+- we tried to make the graphics for this game as clean as possible
+- we went to the cs dojo often, and met almost every single night
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-evolution trees
-battling
-getting pop-up text to remain there for several seconds
+evolution trees are in progress - we have a structure planned and sort of
+implemented, but it is not complete
+getting pop-up text to remain there for several seconds / delaying animations
+there is a weird bug where two pokemon show up in a single encounter. the user
+only sees one however but sometimes two get added to their backpack. IT'S SO
+FRUSTRATINGGGGGG (peace and love)
+font is not loading
+raspberry moves after entering shop :(
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,13 +71,21 @@ implemented if we had the time.
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 When planning a project, make sure your goals are realistic for the time given
-A good nights sleep really helps with code sometimes
+A good nights sleep really helps with code sometimes (louder for those in the back)
+The CSDojo is SUPER DUPER helpful. It's also just a great environment to get down
+and dirty and CODEEEEEEE. Special thanks to Sensei Yaying :3, Senpais Faiza :PPPPP,
+Gabriel :D and Ruiwen <3333333
+A plan is always nice but most of the time the plan has to change
 
 tales of wisdom gained...
 ||||||||||||||||||||||||||||||||||||||||||
 DO NOT underestimate how long code takes, we had unrealistic expectations
 and are now sad we didn't have time to implement everything we wanted to have.
+At the same time, we did everything we could for this project to succeed.
 
+Learning new things takes a lot of time. Navigating through unchartered territory
+is difficult, time-consuming, and at times frustrating. Make space and time to
+grow don't rush it, it just creates more pain in the long run.
 
  ______   ______   __   __   __       ______   _______
 /_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
@@ -437,22 +454,12 @@ the notion of a pokemon running away before you could catch it, updated readme a
 the top of the devlog.
 Nada :: worked on getting exit button to work in the shop, attempted to reconstruct the
 code around the inShop boolean (cough and failed and then SUCCEEDED), updated readme and
-things learned in devlog
+things learned and developments in devlog
 Samantha :: was printing out variables mid development and thought that there was
 an error with random(1) but the real problem was just that we had another print
 statement we forgot about. the strings were concatenating which made us believe
-we had an error in our program, updated flowchart
+we had an error in our program, updated flowchart and devlog qs
 
 All :: got catch method to work more or less, and got the exit button to work in the shop,
 decided what we would implement in our final version of the game.
-==============================================================
-
-TEMPLATE:
-2022-06-0
---------------------------------------------------------------
-Ruby ::
-Nada ::
-Samantha ::
-
-All ::
 ==============================================================

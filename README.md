@@ -34,6 +34,6 @@ v10: implemented berry counter and pokeball counter, eliminated backpack, create
 button in catch screen (lil coward.....), started modeling berry and pokeball icons after
 coin display <br>
 v11: implemented berryThrow. updated count of pokeballs when a pokeball was used  <br>
-v12: catch percentage works! updated visuals, started printStorage
+v12: catch percentage works! updated visuals, started printStorage <br>
 v13: updated catch, printStorage now prints out the pokemon you've caught, added exit
-button to shop
+button to shop <br>
