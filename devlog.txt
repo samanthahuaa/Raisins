@@ -4,25 +4,42 @@ Ruby Friedman
 Nada Hameed
 pd 7
 ---------------------
-Pokemon (Going?)
-A fun game in which the user can catch and battle with pokemon!
+Pokemon
+A fun game in which the user can catch pokemon!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
 OBSTACLES OVERCOME
+Figured out how to catch pokemon and add them to storage
+Able to figure out the equation for the pokeball parabola
+Parsing a CSV file and putting that info into trainer
+Visuals of disappearing images must be overlayed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
+we learned processing just for this project!
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-blah blah pesky bug...
-maybe some of these will move into the Obs.Ovrcm section...
+evolution trees
+battling
+getting pop-up text to remain there for several seconds
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-wow! oo!...
+- delay(# milliseconds) => cool method that we can use to include some sort of pause,
+but it can't be used to control the timing of an animation. according to the processing
+library, this method should only be used to pause scripts
+- we learned how to create an object that follows a parabolic curve, though it utilizes
+many variables. we used the processing library as a reference, and then modified the code
+there to create the curve type that we wanted.
+- we learned how to use processing, and it's a tool that we can now add to our hefty belt.
+we learned how to implement images, how to use keys to perform different functions/animations,
+how to incorporate the mouse, and much more.
+- we learned how to parse csv files, and incorporate that in processing; we have our own
+little library of pokemon (aka pokedex!), and the pokemon that you catch can be differentiated
+between common, uncommon, and rare.
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,11 +54,20 @@ we decided to get rid of the notion of a backpack, and replace it with counters 
 berries and pokeballs the user has, and then display those at the top. while this
 perhaps is harder to visualize, it's more efficient when it comes to implementation.
 
+we decided to not implement battles with other trainers, due to time constraints.
+while this would've implemented stacks, we decided that implementing evolution takes
+priority, because this utilizes trees. this is something that we definitely would've
+implemented if we had the time.
+
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+When planning a project, make sure your goals are realistic for the time given
+A good nights sleep really helps with code sometimes
+
 tales of wisdom gained...
 ||||||||||||||||||||||||||||||||||||||||||
-
+DO NOT underestimate how long code takes, we had unrealistic expectations
+and are now sad we didn't have time to implement everything we wanted to have.
 
 
  ______   ______   __   __   __       ______   _______
@@ -405,15 +431,20 @@ catch method to include the usage of berries
 
 2022-06-09 (at home)
 --------------------------------------------------------------
-Ruby :: worked on the catch method.
+Ruby :: worked on the catch method, got it to WORK, so pokemon could be properly caught
+and added to player's storage. created pop-up for when one catches a pokemon, implemented
+the notion of a pokemon running away before you could catch it, updated readme and questions
+the top of the devlog.
 Nada :: worked on getting exit button to work in the shop, attempted to reconstruct the
-code around the inShop boolean (cough and failed)
+code around the inShop boolean (cough and failed and then SUCCEEDED), updated readme and
+things learned in devlog
 Samantha :: was printing out variables mid development and thought that there was
 an error with random(1) but the real problem was just that we had another print
 statement we forgot about. the strings were concatenating which made us believe
-we had an error in our program.
+we had an error in our program, updated flowchart
 
-All ::
+All :: got catch method to work more or less, and got the exit button to work in the shop,
+decided what we would implement in our final version of the game.
 ==============================================================
 
 TEMPLATE:

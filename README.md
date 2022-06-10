@@ -2,12 +2,13 @@
 ### Nada Hameed, Samantha Hua, Ruby Friedman
 
 ## Project Description
- A totally cool pokemon game in which you can catch and battle with pokemon!
+ A totally cool pokemon game in which you can catch pokemon with berries and pokeballs you buy in the shop!
 
 ## How-to-launch
 1. open a terminal session
 2. clone this repo
-3. run the command ```Processing Woo.pde``` from the root of the cloned repo
+3. run the command ```cd Woo``` rom the root of the cloned repo
+3. run the command ```Processing Woo.pde``` and run the processing window that appears
 
 ## Different Versions
 v0: created all of the files and outlined what we would have in each and what it
@@ -34,3 +35,5 @@ button in catch screen (lil coward.....), started modeling berry and pokeball ic
 coin display <br>
 v11: implemented berryThrow. updated count of pokeballs when a pokeball was used  <br>
 v12: catch percentage works! updated visuals, started printStorage
+v13: updated catch, printStorage now prints out the pokemon you've caught, added exit
+button to shop
